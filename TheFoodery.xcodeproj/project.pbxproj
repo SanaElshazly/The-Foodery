@@ -22,6 +22,7 @@
 		CF1F9DB522AA06470076CDC8 /* URLComponentExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F9DB422AA06470076CDC8 /* URLComponentExtension.swift */; };
 		CF1F9DB722AA066D0076CDC8 /* URLRequestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F9DB622AA066D0076CDC8 /* URLRequestExtension.swift */; };
 		CF1F9DB922AA06960076CDC8 /* URLSessionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F9DB822AA06960076CDC8 /* URLSessionHandler.swift */; };
+		CF1F9DC322AA16200076CDC8 /* GroceryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F9DC222AA16200076CDC8 /* GroceryRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		CF1F9DB422AA06470076CDC8 /* URLComponentExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLComponentExtension.swift; sourceTree = "<group>"; };
 		CF1F9DB622AA066D0076CDC8 /* URLRequestExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestExtension.swift; sourceTree = "<group>"; };
 		CF1F9DB822AA06960076CDC8 /* URLSessionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHandler.swift; sourceTree = "<group>"; };
+		CF1F9DC222AA16200076CDC8 /* GroceryRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		CF1F9D8722A9FF5B0076CDC8 /* TheFoodery */ = {
 			isa = PBXGroup;
 			children = (
+				CF1F9DBA22AA075D0076CDC8 /* Grocery List Scene */,
 				CF1F9DA222AA04BE0076CDC8 /* Network Layer */,
 				CF1F9D8822A9FF5B0076CDC8 /* AppDelegate.swift */,
 				CF1F9D8A22A9FF5B0076CDC8 /* ViewController.swift */,
@@ -89,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				CF1F9DB822AA06960076CDC8 /* URLSessionHandler.swift */,
+				CF1F9DBF22AA075D0076CDC8 /* Request */,
 				CF1F9DA322AA04BE0076CDC8 /* Enums */,
 				CF1F9DA422AA04BE0076CDC8 /* Extensions */,
 				CF1F9DA522AA04BE0076CDC8 /* Protocols */,
@@ -124,6 +128,69 @@
 				CF1F9DB222AA062C0076CDC8 /* URLSessionProtocol.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CF1F9DBA22AA075D0076CDC8 /* Grocery List Scene */ = {
+			isa = PBXGroup;
+			children = (
+				CF1F9DBB22AA075D0076CDC8 /* CustomViews */,
+				CF1F9DBC22AA075D0076CDC8 /* DataStore */,
+				CF1F9DBD22AA075D0076CDC8 /* Models */,
+				CF1F9DBE22AA075D0076CDC8 /* Presenter */,
+				CF1F9DC022AA075D0076CDC8 /* UseCase */,
+				CF1F9DC122AA075D0076CDC8 /* ViewController */,
+			);
+			path = "Grocery List Scene";
+			sourceTree = "<group>";
+		};
+		CF1F9DBB22AA075D0076CDC8 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		CF1F9DBC22AA075D0076CDC8 /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataStore;
+			sourceTree = "<group>";
+		};
+		CF1F9DBD22AA075D0076CDC8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CF1F9DBE22AA075D0076CDC8 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CF1F9DBF22AA075D0076CDC8 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				CF1F9DC222AA16200076CDC8 /* GroceryRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		CF1F9DC022AA075D0076CDC8 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		CF1F9DC122AA075D0076CDC8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +273,7 @@
 				CF1F9D8922A9FF5B0076CDC8 /* AppDelegate.swift in Sources */,
 				CF1F9DA722AA05310076CDC8 /* HTTPMethod.swift in Sources */,
 				CF1F9DB122AA05EE0076CDC8 /* URLEncoder.swift in Sources */,
+				CF1F9DC322AA16200076CDC8 /* GroceryRequest.swift in Sources */,
 				CF1F9DB722AA066D0076CDC8 /* URLRequestExtension.swift in Sources */,
 				CF1F9DAF22AA05D10076CDC8 /* ProviderProtocol.swift in Sources */,
 				CF1F9DB922AA06960076CDC8 /* URLSessionHandler.swift in Sources */,
