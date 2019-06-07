@@ -25,6 +25,7 @@
 		CF1F9DC322AA16200076CDC8 /* GroceryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F9DC222AA16200076CDC8 /* GroceryRequest.swift */; };
 		CF1F9DC922AA23360076CDC8 /* GroceryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F9DC822AA23360076CDC8 /* GroceryData.swift */; };
 		CF1F9DCB22AA23F40076CDC8 /* GroceriesListRemoteDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F9DCA22AA23F40076CDC8 /* GroceriesListRemoteDataStore.swift */; };
+		CF1F9DCD22AA24EB0076CDC8 /* FetchGroceriesListUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F9DCC22AA24EB0076CDC8 /* FetchGroceriesListUsecase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		CF1F9DC222AA16200076CDC8 /* GroceryRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryRequest.swift; sourceTree = "<group>"; };
 		CF1F9DC822AA23360076CDC8 /* GroceryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryData.swift; sourceTree = "<group>"; };
 		CF1F9DCA22AA23F40076CDC8 /* GroceriesListRemoteDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceriesListRemoteDataStore.swift; sourceTree = "<group>"; };
+		CF1F9DCC22AA24EB0076CDC8 /* FetchGroceriesListUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchGroceriesListUsecase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,10 +140,10 @@
 			isa = PBXGroup;
 			children = (
 				CF1F9DBB22AA075D0076CDC8 /* CustomViews */,
+				CF1F9DC022AA075D0076CDC8 /* UseCase */,
 				CF1F9DBC22AA075D0076CDC8 /* DataStore */,
 				CF1F9DBD22AA075D0076CDC8 /* Models */,
 				CF1F9DBE22AA075D0076CDC8 /* Presenter */,
-				CF1F9DC022AA075D0076CDC8 /* UseCase */,
 				CF1F9DC122AA075D0076CDC8 /* ViewController */,
 			);
 			path = "Grocery List Scene";
@@ -188,6 +190,7 @@
 		CF1F9DC022AA075D0076CDC8 /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
+				CF1F9DCC22AA24EB0076CDC8 /* FetchGroceriesListUsecase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				CF1F9DB122AA05EE0076CDC8 /* URLEncoder.swift in Sources */,
 				CF1F9DC322AA16200076CDC8 /* GroceryRequest.swift in Sources */,
 				CF1F9DB722AA066D0076CDC8 /* URLRequestExtension.swift in Sources */,
+				CF1F9DCD22AA24EB0076CDC8 /* FetchGroceriesListUsecase.swift in Sources */,
 				CF1F9DAF22AA05D10076CDC8 /* ProviderProtocol.swift in Sources */,
 				CF1F9DB922AA06960076CDC8 /* URLSessionHandler.swift in Sources */,
 				CF1F9DC922AA23360076CDC8 /* GroceryData.swift in Sources */,
