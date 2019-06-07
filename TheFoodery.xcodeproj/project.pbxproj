@@ -12,6 +12,16 @@
 		CF1F9D8E22A9FF5B0076CDC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF1F9D8C22A9FF5B0076CDC8 /* Main.storyboard */; };
 		CF1F9D9022A9FF5D0076CDC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF1F9D8F22A9FF5D0076CDC8 /* Assets.xcassets */; };
 		CF1F9D9322A9FF5D0076CDC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF1F9D9122A9FF5D0076CDC8 /* LaunchScreen.storyboard */; };
+		CF1F9DA722AA05310076CDC8 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F9DA622AA05310076CDC8 /* HTTPMethod.swift */; };
+		CF1F9DA922AA055F0076CDC8 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F9DA822AA055F0076CDC8 /* NetworkError.swift */; };
+		CF1F9DAB22AA057A0076CDC8 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F9DAA22AA057A0076CDC8 /* Result.swift */; };
+		CF1F9DAD22AA05BA0076CDC8 /* EndPointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F9DAC22AA05BA0076CDC8 /* EndPointProtocol.swift */; };
+		CF1F9DAF22AA05D10076CDC8 /* ProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F9DAE22AA05D10076CDC8 /* ProviderProtocol.swift */; };
+		CF1F9DB122AA05EE0076CDC8 /* URLEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F9DB022AA05EE0076CDC8 /* URLEncoder.swift */; };
+		CF1F9DB322AA062C0076CDC8 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F9DB222AA062C0076CDC8 /* URLSessionProtocol.swift */; };
+		CF1F9DB522AA06470076CDC8 /* URLComponentExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F9DB422AA06470076CDC8 /* URLComponentExtension.swift */; };
+		CF1F9DB722AA066D0076CDC8 /* URLRequestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F9DB622AA066D0076CDC8 /* URLRequestExtension.swift */; };
+		CF1F9DB922AA06960076CDC8 /* URLSessionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F9DB822AA06960076CDC8 /* URLSessionHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +32,16 @@
 		CF1F9D8F22A9FF5D0076CDC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF1F9D9222A9FF5D0076CDC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF1F9D9422A9FF5D0076CDC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF1F9DA622AA05310076CDC8 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		CF1F9DA822AA055F0076CDC8 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		CF1F9DAA22AA057A0076CDC8 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		CF1F9DAC22AA05BA0076CDC8 /* EndPointProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointProtocol.swift; sourceTree = "<group>"; };
+		CF1F9DAE22AA05D10076CDC8 /* ProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderProtocol.swift; sourceTree = "<group>"; };
+		CF1F9DB022AA05EE0076CDC8 /* URLEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEncoder.swift; sourceTree = "<group>"; };
+		CF1F9DB222AA062C0076CDC8 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
+		CF1F9DB422AA06470076CDC8 /* URLComponentExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLComponentExtension.swift; sourceTree = "<group>"; };
+		CF1F9DB622AA066D0076CDC8 /* URLRequestExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestExtension.swift; sourceTree = "<group>"; };
+		CF1F9DB822AA06960076CDC8 /* URLSessionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +74,7 @@
 		CF1F9D8722A9FF5B0076CDC8 /* TheFoodery */ = {
 			isa = PBXGroup;
 			children = (
+				CF1F9DA222AA04BE0076CDC8 /* Network Layer */,
 				CF1F9D8822A9FF5B0076CDC8 /* AppDelegate.swift */,
 				CF1F9D8A22A9FF5B0076CDC8 /* ViewController.swift */,
 				CF1F9D8C22A9FF5B0076CDC8 /* Main.storyboard */,
@@ -62,6 +83,47 @@
 				CF1F9D9422A9FF5D0076CDC8 /* Info.plist */,
 			);
 			path = TheFoodery;
+			sourceTree = "<group>";
+		};
+		CF1F9DA222AA04BE0076CDC8 /* Network Layer */ = {
+			isa = PBXGroup;
+			children = (
+				CF1F9DB822AA06960076CDC8 /* URLSessionHandler.swift */,
+				CF1F9DA322AA04BE0076CDC8 /* Enums */,
+				CF1F9DA422AA04BE0076CDC8 /* Extensions */,
+				CF1F9DA522AA04BE0076CDC8 /* Protocols */,
+			);
+			path = "Network Layer";
+			sourceTree = "<group>";
+		};
+		CF1F9DA322AA04BE0076CDC8 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				CF1F9DA622AA05310076CDC8 /* HTTPMethod.swift */,
+				CF1F9DA822AA055F0076CDC8 /* NetworkError.swift */,
+				CF1F9DAA22AA057A0076CDC8 /* Result.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		CF1F9DA422AA04BE0076CDC8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CF1F9DB422AA06470076CDC8 /* URLComponentExtension.swift */,
+				CF1F9DB622AA066D0076CDC8 /* URLRequestExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CF1F9DA522AA04BE0076CDC8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CF1F9DAC22AA05BA0076CDC8 /* EndPointProtocol.swift */,
+				CF1F9DAE22AA05D10076CDC8 /* ProviderProtocol.swift */,
+				CF1F9DB022AA05EE0076CDC8 /* URLEncoder.swift */,
+				CF1F9DB222AA062C0076CDC8 /* URLSessionProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +197,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF1F9DB322AA062C0076CDC8 /* URLSessionProtocol.swift in Sources */,
+				CF1F9DB522AA06470076CDC8 /* URLComponentExtension.swift in Sources */,
 				CF1F9D8B22A9FF5B0076CDC8 /* ViewController.swift in Sources */,
+				CF1F9DAB22AA057A0076CDC8 /* Result.swift in Sources */,
+				CF1F9DAD22AA05BA0076CDC8 /* EndPointProtocol.swift in Sources */,
+				CF1F9DA922AA055F0076CDC8 /* NetworkError.swift in Sources */,
 				CF1F9D8922A9FF5B0076CDC8 /* AppDelegate.swift in Sources */,
+				CF1F9DA722AA05310076CDC8 /* HTTPMethod.swift in Sources */,
+				CF1F9DB122AA05EE0076CDC8 /* URLEncoder.swift in Sources */,
+				CF1F9DB722AA066D0076CDC8 /* URLRequestExtension.swift in Sources */,
+				CF1F9DAF22AA05D10076CDC8 /* ProviderProtocol.swift in Sources */,
+				CF1F9DB922AA06960076CDC8 /* URLSessionHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
