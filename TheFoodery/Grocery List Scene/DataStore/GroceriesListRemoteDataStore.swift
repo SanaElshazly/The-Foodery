@@ -8,12 +8,12 @@
 
 import Foundation
 
-protocol GroceriesListRemoteDataStoreProtocol {
+protocol GroceriesListDataStoreProtocol {
     func fetchGroceries(completion: @escaping (Result<GroceryData, NetworkError>) -> ())
     
 }
 
-class GroceriesListRemoteDataStore: GroceriesListRemoteDataStoreProtocol {
+class GroceriesListRemoteDataStore: GroceriesListDataStoreProtocol {
     private let sessionProvider = URLSessionHandler()
     
     func fetchGroceries(completion: @escaping (Result<GroceryData, NetworkError>) -> ()) {
