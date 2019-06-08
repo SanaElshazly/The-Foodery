@@ -27,6 +27,8 @@
 		CF1F9DC922AA23360076CDC8 /* GroceryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F9DC822AA23360076CDC8 /* GroceryData.swift */; };
 		CF1F9DCB22AA23F40076CDC8 /* GroceriesListRemoteDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F9DCA22AA23F40076CDC8 /* GroceriesListRemoteDataStore.swift */; };
 		CF1F9DCD22AA24EB0076CDC8 /* FetchGroceriesListUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F9DCC22AA24EB0076CDC8 /* FetchGroceriesListUsecase.swift */; };
+		CF1F9DCF22AA26DF0076CDC8 /* GroceryItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F9DCE22AA26DF0076CDC8 /* GroceryItemCollectionViewCell.swift */; };
+		CF1F9DD122AA26F10076CDC8 /* GroceryItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF1F9DD022AA26F10076CDC8 /* GroceryItemCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		CF1F9DC822AA23360076CDC8 /* GroceryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryData.swift; sourceTree = "<group>"; };
 		CF1F9DCA22AA23F40076CDC8 /* GroceriesListRemoteDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceriesListRemoteDataStore.swift; sourceTree = "<group>"; };
 		CF1F9DCC22AA24EB0076CDC8 /* FetchGroceriesListUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchGroceriesListUsecase.swift; sourceTree = "<group>"; };
+		CF1F9DCE22AA26DF0076CDC8 /* GroceryItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		CF1F9DD022AA26F10076CDC8 /* GroceryItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroceryItemCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +180,8 @@
 		CF1F9DBB22AA075D0076CDC8 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				CF1F9DCE22AA26DF0076CDC8 /* GroceryItemCollectionViewCell.swift */,
+				CF1F9DD022AA26F10076CDC8 /* GroceryItemCollectionViewCell.xib */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -286,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF1F9D9322A9FF5D0076CDC8 /* LaunchScreen.storyboard in Resources */,
+				CF1F9DD122AA26F10076CDC8 /* GroceryItemCollectionViewCell.xib in Resources */,
 				CF1F9D9022A9FF5D0076CDC8 /* Assets.xcassets in Resources */,
 				CF1F9D8E22A9FF5B0076CDC8 /* Main.storyboard in Resources */,
 			);
@@ -321,6 +328,7 @@
 			files = (
 				CF1F9DB322AA062C0076CDC8 /* URLSessionProtocol.swift in Sources */,
 				CF1F9DB522AA06470076CDC8 /* URLComponentExtension.swift in Sources */,
+				CF1F9DCF22AA26DF0076CDC8 /* GroceryItemCollectionViewCell.swift in Sources */,
 				CF1F9D8B22A9FF5B0076CDC8 /* ViewController.swift in Sources */,
 				CF1F9DAB22AA057A0076CDC8 /* Result.swift in Sources */,
 				CF1F9DAD22AA05BA0076CDC8 /* EndPointProtocol.swift in Sources */,
