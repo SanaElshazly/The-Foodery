@@ -35,6 +35,7 @@
 		CF6D148322B5A2ED00BBF1E2 /* GroceryItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6D148222B5A2ED00BBF1E2 /* GroceryItemDetailsViewController.swift */; };
 		CF6D148522B5A2FF00BBF1E2 /* GroceryItemDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6D148422B5A2FF00BBF1E2 /* GroceryItemDetailsPresenter.swift */; };
 		CF6D148722B5A32100BBF1E2 /* FetchGroceryItemDetailsUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6D148622B5A32100BBF1E2 /* FetchGroceryItemDetailsUsecase.swift */; };
+		CF6D148A22B5AB6700BBF1E2 /* GroceriesListViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6D148922B5AB6700BBF1E2 /* GroceriesListViewRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		CF6D148222B5A2ED00BBF1E2 /* GroceryItemDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryItemDetailsViewController.swift; sourceTree = "<group>"; };
 		CF6D148422B5A2FF00BBF1E2 /* GroceryItemDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryItemDetailsPresenter.swift; sourceTree = "<group>"; };
 		CF6D148622B5A32100BBF1E2 /* FetchGroceryItemDetailsUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchGroceryItemDetailsUsecase.swift; sourceTree = "<group>"; };
+		CF6D148922B5AB6700BBF1E2 /* GroceriesListViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceriesListViewRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,7 @@
 		CF1F9DBA22AA075D0076CDC8 /* Grocery List Scene */ = {
 			isa = PBXGroup;
 			children = (
+				CF6D148822B5AB4400BBF1E2 /* Router */,
 				CF1F9DBB22AA075D0076CDC8 /* CustomViews */,
 				CF1F9DC022AA075D0076CDC8 /* UseCase */,
 				CF1F9DBD22AA075D0076CDC8 /* Models */,
@@ -272,6 +275,14 @@
 				CF6D148222B5A2ED00BBF1E2 /* GroceryItemDetailsViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CF6D148822B5AB4400BBF1E2 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CF6D148922B5AB6700BBF1E2 /* GroceriesListViewRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -380,6 +391,7 @@
 				CF1F9DA922AA055F0076CDC8 /* NetworkError.swift in Sources */,
 				CF1F9D8922A9FF5B0076CDC8 /* AppDelegate.swift in Sources */,
 				CF1F9DD722AF227E0076CDC8 /* GroceriesListViewConfigurator.swift in Sources */,
+				CF6D148A22B5AB6700BBF1E2 /* GroceriesListViewRouter.swift in Sources */,
 				CF1F9DA722AA05310076CDC8 /* HTTPMethod.swift in Sources */,
 				CF1F9DB122AA05EE0076CDC8 /* URLEncoder.swift in Sources */,
 				CF1F9DC322AA16200076CDC8 /* GroceryRequest.swift in Sources */,

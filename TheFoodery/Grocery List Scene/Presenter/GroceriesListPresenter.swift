@@ -16,14 +16,17 @@ class GroceriesListPresenter : GroceriesListPresentable {
     
     private var fetchGroceriesListUsecase: FetchGroceriesListUsecase
     fileprivate weak var view: GroceriesListViewProtocol?
+    private var router: GroceriesListViewRouter?
     var groceriesList = [Product]()
     
     //MARK -: Intialization
     
     init(view: GroceriesListViewProtocol,
-         fetchGroceriesListUsecase: FetchGroceriesListUsecase) {
+         fetchGroceriesListUsecase: FetchGroceriesListUsecase,
+         router: GroceriesListViewRouter) {
         self.view = view
         self.fetchGroceriesListUsecase = fetchGroceriesListUsecase
+        self.router = router
     }
     
     func fetchGroceriesList() {

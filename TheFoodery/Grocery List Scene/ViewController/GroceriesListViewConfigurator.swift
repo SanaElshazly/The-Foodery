@@ -11,7 +11,8 @@ import Foundation
 class GroceriesListViewConfigurator: NSObject {
     func configure(viewController: GroceriesListViewController) {
         let fetchGroceriesListUsecase = FetchGroceriesListUsecase()
-        let presenter = GroceriesListPresenter(view: viewController, fetchGroceriesListUsecase: fetchGroceriesListUsecase)
+        let router = GroceriesListViewRouter(viewController: viewController)
+        let presenter = GroceriesListPresenter(view: viewController, fetchGroceriesListUsecase: fetchGroceriesListUsecase, router: router)
         viewController.presenter = presenter
     }
 }
