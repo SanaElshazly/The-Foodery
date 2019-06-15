@@ -12,10 +12,8 @@ import SDWebImage
 
 class GroceryItemCollectionViewCell: UICollectionViewCell, NibReusable {
     
-    @IBOutlet weak var productImageView: UIImageView!
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var priceLabel: UILabel!
-    
+    @IBOutlet weak var groceryItemView: GroceryItemView!
+
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -24,10 +22,8 @@ class GroceryItemCollectionViewCell: UICollectionViewCell, NibReusable {
         guard product != nil else {
             return
         }
-
-        nameLabel.text = product?.name
-        priceLabel.text = "\(product?.price ?? 0)"
-        productImageView.sd_setImage(with: URL(string: product?.image ?? "placeholder.png"))
+        
+        groceryItemView.configure(with: product)
     }
     
 }
