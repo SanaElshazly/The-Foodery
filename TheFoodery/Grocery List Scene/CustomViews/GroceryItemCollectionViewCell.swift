@@ -26,7 +26,7 @@ class GroceryItemCollectionViewCell: UICollectionViewCell, NibReusable {
         }
 
         nameLabel.text = product?.name
-        priceLabel.text = "\(product?.price)"
+        priceLabel.text = "\(product?.price ?? 0)"
         productImageView.sd_setImage(with: URL(string: product?.image ?? "placeholder.png"))
     }
     
