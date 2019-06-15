@@ -10,21 +10,21 @@ import Foundation
 
 class FetchGroceriesListUsecase {
     
-    var groceriesListDataStore : GroceriesListDataStoreProtocol?
-    
+    private let sessionProvider = URLSessionHandler()
+
     func fetchGroceries(completion: @escaping (Result<GroceryData, NetworkError>) -> ()) {
-        
-        groceriesListDataStore?.fetchGroceries(completion: { (response) in
+        sessionProvider.request(type: GroceryData.self, service: GroceryRequest.groceries) { (response) in
             switch response {
             case let .success(groceries):
                 print(groceries)
                 completion(.success(groceries))
                 
             case let .failure(error):
-                print(error)
                 completion(.failure(.failed))
+                print(error)
             }
-        })
+        }
+        
     }
     
     

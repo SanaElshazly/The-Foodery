@@ -11,9 +11,7 @@ import Foundation
 class GroceriesListViewConfigurator: NSObject {
     func configure(viewController: GroceriesListViewController) {
         let fetchGroceriesListUsecase = FetchGroceriesListUsecase()
-        let groceriesListDataStore: GroceriesListDataStoreProtocol = GroceriesListRemoteDataStore()
         let presenter = GroceriesListPresenter(view: viewController, fetchGroceriesListUsecase: fetchGroceriesListUsecase)
         viewController.presenter = presenter
-        fetchGroceriesListUsecase.groceriesListDataStore = groceriesListDataStore
     }
 }
