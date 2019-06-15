@@ -31,6 +31,11 @@
 		CF1F9DD322AB6F8E0076CDC8 /* GroceriesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F9DD222AB6F8E0076CDC8 /* GroceriesListViewController.swift */; };
 		CF1F9DD522AB71920076CDC8 /* GroceriesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F9DD422AB71920076CDC8 /* GroceriesListPresenter.swift */; };
 		CF1F9DD722AF227E0076CDC8 /* GroceriesListViewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F9DD622AF227E0076CDC8 /* GroceriesListViewConfigurator.swift */; };
+		CF6D147B22B598A600BBF1E2 /* GroceryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6D147A22B598A600BBF1E2 /* GroceryItemView.swift */; };
+		CF6D147D22B598D100BBF1E2 /* GroceryItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF6D147C22B598D100BBF1E2 /* GroceryItemView.xib */; };
+		CF6D148322B5A2ED00BBF1E2 /* GroceryItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6D148222B5A2ED00BBF1E2 /* GroceryItemDetailsViewController.swift */; };
+		CF6D148522B5A2FF00BBF1E2 /* GroceryItemDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6D148422B5A2FF00BBF1E2 /* GroceryItemDetailsPresenter.swift */; };
+		CF6D148722B5A32100BBF1E2 /* FetchGroceryItemDetailsUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6D148622B5A32100BBF1E2 /* FetchGroceryItemDetailsUsecase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +67,11 @@
 		CF1F9DD222AB6F8E0076CDC8 /* GroceriesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceriesListViewController.swift; sourceTree = "<group>"; };
 		CF1F9DD422AB71920076CDC8 /* GroceriesListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceriesListPresenter.swift; sourceTree = "<group>"; };
 		CF1F9DD622AF227E0076CDC8 /* GroceriesListViewConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceriesListViewConfigurator.swift; sourceTree = "<group>"; };
+		CF6D147A22B598A600BBF1E2 /* GroceryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryItemView.swift; sourceTree = "<group>"; };
+		CF6D147C22B598D100BBF1E2 /* GroceryItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroceryItemView.xib; sourceTree = "<group>"; };
+		CF6D148222B5A2ED00BBF1E2 /* GroceryItemDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryItemDetailsViewController.swift; sourceTree = "<group>"; };
+		CF6D148422B5A2FF00BBF1E2 /* GroceryItemDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryItemDetailsPresenter.swift; sourceTree = "<group>"; };
+		CF6D148622B5A32100BBF1E2 /* FetchGroceryItemDetailsUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchGroceryItemDetailsUsecase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +124,7 @@
 		CF1F9D8722A9FF5B0076CDC8 /* TheFoodery */ = {
 			isa = PBXGroup;
 			children = (
+				CF6D147E22B5A2C100BBF1E2 /* Grocery Item Details Scene */,
 				CF1F9DBA22AA075D0076CDC8 /* Grocery List Scene */,
 				CF1F9DA222AA04BE0076CDC8 /* Network Layer */,
 				CF1F9D8822A9FF5B0076CDC8 /* AppDelegate.swift */,
@@ -185,6 +196,8 @@
 			children = (
 				CF1F9DCE22AA26DF0076CDC8 /* GroceryItemCollectionViewCell.swift */,
 				CF1F9DD022AA26F10076CDC8 /* GroceryItemCollectionViewCell.xib */,
+				CF6D147A22B598A600BBF1E2 /* GroceryItemView.swift */,
+				CF6D147C22B598D100BBF1E2 /* GroceryItemView.xib */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -234,6 +247,40 @@
 			children = (
 				CF1F9DD222AB6F8E0076CDC8 /* GroceriesListViewController.swift */,
 				CF1F9DD622AF227E0076CDC8 /* GroceriesListViewConfigurator.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CF6D147E22B5A2C100BBF1E2 /* Grocery Item Details Scene */ = {
+			isa = PBXGroup;
+			children = (
+				CF6D148122B5A2C100BBF1E2 /* ViewController */,
+				CF6D147F22B5A2C100BBF1E2 /* Presenter */,
+				CF6D148022B5A2C100BBF1E2 /* Usecase */,
+			);
+			path = "Grocery Item Details Scene";
+			sourceTree = "<group>";
+		};
+		CF6D147F22B5A2C100BBF1E2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CF6D148422B5A2FF00BBF1E2 /* GroceryItemDetailsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CF6D148022B5A2C100BBF1E2 /* Usecase */ = {
+			isa = PBXGroup;
+			children = (
+				CF6D148622B5A32100BBF1E2 /* FetchGroceryItemDetailsUsecase.swift */,
+			);
+			path = Usecase;
+			sourceTree = "<group>";
+		};
+		CF6D148122B5A2C100BBF1E2 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CF6D148222B5A2ED00BBF1E2 /* GroceryItemDetailsViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -297,6 +344,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF6D147D22B598D100BBF1E2 /* GroceryItemView.xib in Resources */,
 				CF1F9D9322A9FF5D0076CDC8 /* LaunchScreen.storyboard in Resources */,
 				CF1F9DD122AA26F10076CDC8 /* GroceryItemCollectionViewCell.xib in Resources */,
 				CF1F9D9022A9FF5D0076CDC8 /* Assets.xcassets in Resources */,
@@ -333,11 +381,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF1F9DD322AB6F8E0076CDC8 /* GroceriesListViewController.swift in Sources */,
+				CF6D147B22B598A600BBF1E2 /* GroceryItemView.swift in Sources */,
 				CF1F9DB322AA062C0076CDC8 /* URLSessionProtocol.swift in Sources */,
 				CF1F9DB522AA06470076CDC8 /* URLComponentExtension.swift in Sources */,
 				CF1F9DCF22AA26DF0076CDC8 /* GroceryItemCollectionViewCell.swift in Sources */,
 				CF1F9DAB22AA057A0076CDC8 /* Result.swift in Sources */,
 				CF1F9DAD22AA05BA0076CDC8 /* EndPointProtocol.swift in Sources */,
+				CF6D148722B5A32100BBF1E2 /* FetchGroceryItemDetailsUsecase.swift in Sources */,
 				CF1F9DCB22AA23F40076CDC8 /* GroceriesListRemoteDataStore.swift in Sources */,
 				CF1F9DA922AA055F0076CDC8 /* NetworkError.swift in Sources */,
 				CF1F9D8922A9FF5B0076CDC8 /* AppDelegate.swift in Sources */,
@@ -347,8 +397,10 @@
 				CF1F9DC322AA16200076CDC8 /* GroceryRequest.swift in Sources */,
 				CF1F9DB722AA066D0076CDC8 /* URLRequestExtension.swift in Sources */,
 				CF1F9DCD22AA24EB0076CDC8 /* FetchGroceriesListUsecase.swift in Sources */,
+				CF6D148522B5A2FF00BBF1E2 /* GroceryItemDetailsPresenter.swift in Sources */,
 				CF1F9DAF22AA05D10076CDC8 /* ProviderProtocol.swift in Sources */,
 				CF1F9DB922AA06960076CDC8 /* URLSessionHandler.swift in Sources */,
+				CF6D148322B5A2ED00BBF1E2 /* GroceryItemDetailsViewController.swift in Sources */,
 				CF1F9DD522AB71920076CDC8 /* GroceriesListPresenter.swift in Sources */,
 				CF1F9DC922AA23360076CDC8 /* GroceryData.swift in Sources */,
 			);
