@@ -19,4 +19,5 @@ struct Product: Codable {
     let product_id, name: String
     let price: Int
     let image: String
+    let description: String?
 }
