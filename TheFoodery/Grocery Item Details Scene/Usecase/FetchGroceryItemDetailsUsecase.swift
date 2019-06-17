@@ -21,7 +21,6 @@ class FetchGroceryItemDetailsUsecase {
         sessionProvider.request(type: Product.self, service: GroceryRequest.productDetail(product_id: productID)) { (response) in
             switch response {
             case let .success(product):
-                print(product)
                 completion(.success(product))
 
             case let .failure(error):
