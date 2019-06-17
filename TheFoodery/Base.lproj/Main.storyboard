@@ -48,7 +48,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="The Foodery" id="eHa-0Z-EHE"/>
+                    <navigationItem key="navigationItem" title="The Foodery" leftItemsSupplementBackButton="YES" id="eHa-0Z-EHE">
+                        <barButtonItem key="backBarButtonItem" title=" " id="oAL-Ok-1Os"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="groceriesCollectionView" destination="8Yn-Zy-6IF" id="e9I-RW-1D7"/>
                     </connections>
@@ -57,7 +59,7 @@
             </objects>
             <point key="canvasLocation" x="1039.2" y="137.18140929535232"/>
         </scene>
-        <!--Grocery Item Details View Controller-->
+        <!--Details-->
         <scene sceneID="B7I-CD-HAk">
             <objects>
                 <viewController storyboardIdentifier="GroceryItemDetailsViewController" id="NYi-9H-dia" customClass="GroceryItemDetailsViewController" customModule="TheFoodery" customModuleProvider="target" sceneMemberID="viewController">
@@ -81,6 +83,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gbm-uV-Vx5"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Details" id="nKg-fL-Pbg"/>
                     <connections>
                         <outlet property="groceryItemView" destination="cnz-4B-8Fm" id="59d-rS-ilD"/>
                     </connections>
@@ -97,6 +100,12 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rdf-1m-LXt">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.92365080118179321" green="0.28566616773605347" blue="0.4076056182384491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.92365080118179321" green="0.28566616773605347" blue="0.4076056182384491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
