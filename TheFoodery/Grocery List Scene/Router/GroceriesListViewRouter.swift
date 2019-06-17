@@ -20,7 +20,7 @@ enum Destination {
 class GroceriesListViewRouter: Navigator {
     
     private weak var viewController: GroceriesListViewController?
-    private var detailedGroceryItem = Product()
+    private var selectedProductID = String()
     
     init(viewController: GroceriesListViewController) {
         self.viewController = viewController
@@ -34,8 +34,8 @@ class GroceriesListViewRouter: Navigator {
         self.viewController?.navigationController?.pushViewController(detailedGIFViewController, animated: false)
     }
     
-    func configureDetailedGroceryItem(_ detailedGroceryItem: Product) {
-        self.detailedGroceryItem = detailedGroceryItem
+    func configureDetailedGroceryItem(_ selectedProductID: String) {
+        self.selectedProductID = selectedProductID
     }
     
     private func makeViewController(for destination: Destination) -> UIViewController? {
@@ -50,7 +50,7 @@ class GroceriesListViewRouter: Navigator {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         if let groceryItemDetailsViewController  = storyboard.instantiateViewController(withIdentifier: "GroceryItemDetailsViewController") as? GroceryItemDetailsViewController {
             
-            groceryItemDetailsViewController.detailedGroceryItem = detailedGroceryItem
+            groceryItemDetailsViewController.selectedProductID = selectedProductID
             
             return groceryItemDetailsViewController
         }

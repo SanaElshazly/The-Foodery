@@ -57,6 +57,38 @@
             </objects>
             <point key="canvasLocation" x="1039.2" y="137.18140929535232"/>
         </scene>
+        <!--Grocery Item Details View Controller-->
+        <scene sceneID="B7I-CD-HAk">
+            <objects>
+                <viewController storyboardIdentifier="GroceryItemDetailsViewController" id="NYi-9H-dia" customClass="GroceryItemDetailsViewController" customModule="TheFoodery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ln0-Fs-Sbf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cnz-4B-8Fm" customClass="GroceryItemView" customModule="TheFoodery" customModuleProvider="target">
+                                <rect key="frame" x="20" y="50" width="335" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="750" constant="300" placeholder="YES" id="sBu-pO-vy9"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cnz-4B-8Fm" firstAttribute="top" secondItem="gbm-uV-Vx5" secondAttribute="top" constant="30" id="S2u-hc-dpa"/>
+                            <constraint firstItem="cnz-4B-8Fm" firstAttribute="leading" secondItem="gbm-uV-Vx5" secondAttribute="leading" constant="20" id="SGS-nL-VhB"/>
+                            <constraint firstItem="gbm-uV-Vx5" firstAttribute="trailing" secondItem="cnz-4B-8Fm" secondAttribute="trailing" constant="20" id="SPt-hl-zxp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gbm-uV-Vx5"/>
+                    </view>
+                    <connections>
+                        <outlet property="groceryItemView" destination="cnz-4B-8Fm" id="59d-rS-ilD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bGM-Wf-q7i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2205" y="-127"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Lze-aZ-DTZ">
             <objects>

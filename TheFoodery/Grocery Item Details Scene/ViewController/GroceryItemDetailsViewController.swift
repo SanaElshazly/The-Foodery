@@ -8,23 +8,55 @@
 
 import UIKit
 
+protocol GroceryItemDetailsViewProtocol: class {
+    func showLoading()
+    func hideLoading()
+    func updateProduct(with productdetails: Product)
+}
+
 class GroceryItemDetailsViewController: UIViewController {
 
+    //MARK- Outlets
+    @IBOutlet weak var groceryItemView: GroceryItemView!
+    
+    //MARK- Properties
+    var presenter: DetailedGroceryPresentable?
+    let configurator = GroceryItemDetailsViewConfigurator()
+    var selectedProductID = String()
+    let alert = UIAlertController(title: nil, message: "Loading...", preferredStyle: .alert)
+    let loadingIndicator = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50))
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        
+        configurator.configure(viewController: self)
+        configureLoadingIndicator()
+        presenter?.fetchGroceryItemDetails(selectedProductID)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func configureLoadingIndicator(){
+        loadingIndicator.hidesWhenStopped = true
+        loadingIndicator.style = UIActivityIndicatorView.Style.gray
     }
-    */
-
+    
+    func updateProduct(with productdetails: Product) {
+        groceryItemView.configure(with: productdetails)
+    }
 }
+
+
+// MARK: - Handle Loading Indicator
+
+extension GroceryItemDetailsViewController: GroceryItemDetailsViewProtocol {
+    func showLoading() {
+        loadingIndicator.startAnimating();
+        alert.view.addSubview(loadingIndicator)
+        self.parent?.present(alert, animated: true, completion: nil)
+    }
+    
+    func hideLoading() {
+        self.parent?.dismiss(animated: false, completion: nil)
+    }
+}
+
