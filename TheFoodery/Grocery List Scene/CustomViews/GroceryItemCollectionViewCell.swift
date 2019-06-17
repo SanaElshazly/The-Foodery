@@ -8,7 +8,6 @@
 
 import UIKit
 import Reusable
-import SDWebImage
 
 class GroceryItemCollectionViewCell: UICollectionViewCell, NibReusable {
     
