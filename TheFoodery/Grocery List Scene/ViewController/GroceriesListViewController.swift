@@ -24,17 +24,18 @@ class GroceriesListViewController: UIViewController {
     var presenter: GroceriesListPresentable?
     var productsList : [Product] = [] {
         didSet{
-            DispatchQueue.main.async {
-                self.groceriesCollectionView?.reloadData()
-            }
+            self.groceriesCollectionView?.reloadData()
         }
     }
+    let alert = UIAlertController(title: nil, message: "Loading...", preferredStyle: .alert)
+    let loadingIndicator = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50))
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         configureGroceriesCollectionView()
         configurator.configure(viewController: self)
+        configureLoadingIndicator()
         presenter?.fetchGroceriesList()
     }
     
@@ -44,6 +45,11 @@ class GroceriesListViewController: UIViewController {
         
         groceriesCollectionView?.backgroundColor = UIColor.clear
         groceriesCollectionView.register(cellType: GroceryItemCollectionViewCell.self)
+    }
+    
+    func configureLoadingIndicator(){
+        loadingIndicator.hidesWhenStopped = true
+        loadingIndicator.style = UIActivityIndicatorView.Style.gray
     }
     
     func updateProducts(with list: [Product]) {
@@ -62,13 +68,12 @@ extension GroceriesListViewController:  UICollectionViewDataSource, UICollection
         
         let cell = collectionView.dequeueReusableCell(for: indexPath) as GroceryItemCollectionViewCell
         
-        // TODO: Configure cell here
         cell.configureCell(with: productsList[indexPath.row])
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        // TODO: navigate to product details here
+        presenter?.navigateToGroceryItemDetailsViewController(productsList[indexPath.row].product_id)
     }
 }
 
@@ -83,15 +88,16 @@ extension GroceriesListViewController: UICollectionViewDelegateFlowLayout {
     }
 }
 
-
 // MARK: - Handle Loading Indicator
 
 extension GroceriesListViewController: GroceriesListViewProtocol {
     func showLoading() {
-        // TODO: show loading indicator here
+        loadingIndicator.startAnimating();
+        alert.view.addSubview(loadingIndicator)
+        self.parent?.present(alert, animated: true, completion: nil)
     }
     
     func hideLoading() {
-        // TODO: hide loading indicator here
+        self.parent?.dismiss(animated: false, completion: nil)
     }
 }

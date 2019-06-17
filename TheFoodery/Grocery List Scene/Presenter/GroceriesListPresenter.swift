@@ -10,6 +10,7 @@ import Foundation
 
 protocol GroceriesListPresentable {
     func fetchGroceriesList()
+    func navigateToGroceryItemDetailsViewController(_ selectedProductID: String) 
 }
 
 class GroceriesListPresenter : GroceriesListPresentable {
@@ -39,8 +40,10 @@ class GroceriesListPresenter : GroceriesListPresentable {
 
         
                 self.groceriesList = groceriesData.products
-                self.view?.updateProducts(with: self.groceriesList)
-                self.view?.hideLoading()
+                DispatchQueue.main.async {
+                    self.view?.updateProducts(with: self.groceriesList)
+                    self.view?.hideLoading()
+                }
                 
             case let .failure(error):
                 print(error)
@@ -48,6 +51,13 @@ class GroceriesListPresenter : GroceriesListPresentable {
                 self.view?.hideLoading()
             }
         }
+    }
+    
+    // MARK:- Handle Navigation
+    
+    func navigateToGroceryItemDetailsViewController(_ selectedProductID: String) {
+        router?.configureDetailedGroceryItem(selectedProductID)
+        router?.navigate(to: .showDetailedGroceryItem)
     }
 
 }
