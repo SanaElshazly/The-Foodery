@@ -23,7 +23,7 @@ enum GroceryRequest: EndPointProtocol {
         case .groceries:
             return "list"
         case let .productDetail(product_id):
-            return "\(product_id)\\detail"
+            return "\(product_id)/detail"
         }
     }
     
