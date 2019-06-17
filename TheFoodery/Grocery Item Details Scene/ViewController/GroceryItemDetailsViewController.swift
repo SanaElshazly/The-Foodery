@@ -23,6 +23,12 @@ class GroceryItemDetailsViewController: UIViewController {
     var presenter: DetailedGroceryPresentable?
     let configurator = GroceryItemDetailsViewConfigurator()
     var selectedProductID = String()
+    var groceryItem : Product? {
+        didSet{
+            groceryItemView.configure(with: groceryItem)
+        }
+    }
+    
     let alert = UIAlertController(title: nil, message: "Loading...", preferredStyle: .alert)
     let loadingIndicator = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50))
     
@@ -41,7 +47,7 @@ class GroceryItemDetailsViewController: UIViewController {
     }
     
     func updateProduct(with productdetails: Product) {
-        groceryItemView.configure(with: productdetails)
+        self.groceryItem = productdetails
     }
 }
 

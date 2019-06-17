@@ -86,6 +86,22 @@ extension GroceriesListViewController: UICollectionViewDelegateFlowLayout {
         
         return CGSize(width: collectionViewSize/2, height: collectionViewSize/2)
     }
+    
+    public override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
+        if UIDevice.current.orientation.isLandscape,
+            let layout = groceriesCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            let padding: CGFloat =  10
+            let collectionViewSize = groceriesCollectionView.frame.size.width - padding
+            layout.itemSize = CGSize(width: collectionViewSize/2, height: collectionViewSize/2)
+            layout.invalidateLayout()
+        } else if UIDevice.current.orientation.isPortrait,
+            let layout = groceriesCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            let padding: CGFloat =  10
+            let collectionViewSize = groceriesCollectionView.frame.size.width - padding
+            layout.itemSize = CGSize(width: collectionViewSize/2, height: collectionViewSize/2)
+            layout.invalidateLayout()
+        }
+    }
 }
 
 // MARK: - Handle Loading Indicator
