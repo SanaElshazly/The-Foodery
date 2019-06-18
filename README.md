@@ -16,6 +16,11 @@ Applying VIPER architecture, this allowed me to move some responsibility from th
 
 In VIPER, the communication between Interactor and Presenter, and View and Presenter is bidirectional.
 
+
+## Error Handling
+
+I used the `Result Pattern` for error handling, means we have an enum with 2 cases, one for success with associated type, and one for failure with error type. In addition to using a switch statement to switch between the 2 cases, which allows powerful pattern matching, and ensures all possible results are covered.
+
 ## Running the App 
 
 To run The Foodery app, follow these steps:
@@ -33,3 +38,4 @@ To run The Foodery app, follow these steps:
 
  - Write Unit Tests and UI Tests
  - Support landscape and portrait orientation
+ - Handle errors
