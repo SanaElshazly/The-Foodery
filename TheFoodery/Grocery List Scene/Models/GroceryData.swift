@@ -20,12 +20,4 @@ struct Product: Codable {
     let price: Int
     let image: String
     let description: String?
-    
-//    init(product_id: String? = "product_id", name: String? = "Grocery Name", price: Int? = 0, image: String? = "placeholder" , description: String? = "Grocery Description") {
-//        self.product_id = product_id
-//        self.name = name
-//        self.price = price
-//        self.image = image
-//        self.description = description
-//    }
 }
