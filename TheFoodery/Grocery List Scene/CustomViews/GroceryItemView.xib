@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -28,7 +28,7 @@
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="goZ-tz-o25" userLabel="Name Label">
                     <rect key="frame" x="5" y="287" width="257" height="0.0"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -56,12 +56,12 @@
                 <constraint firstItem="goZ-tz-o25" firstAttribute="centerX" secondItem="mQA-WD-fi3" secondAttribute="centerX" id="X0v-6K-RTn"/>
                 <constraint firstItem="yLs-qs-GxU" firstAttribute="leading" secondItem="vWn-np-SrS" secondAttribute="leading" constant="5" id="gVS-9V-vlf"/>
                 <constraint firstItem="dC7-ul-5y8" firstAttribute="leading" secondItem="vWn-np-SrS" secondAttribute="leading" constant="5" id="glZ-1m-VlS"/>
-                <constraint firstAttribute="trailing" secondItem="xzH-v3-hN2" secondAttribute="trailing" id="i2v-ew-uUL"/>
                 <constraint firstItem="vWn-np-SrS" firstAttribute="trailing" secondItem="dC7-ul-5y8" secondAttribute="trailing" constant="5" id="lE9-wY-ccB"/>
+                <constraint firstItem="xzH-v3-hN2" firstAttribute="leading" secondItem="vWn-np-SrS" secondAttribute="leading" id="mLe-jP-YVP"/>
                 <constraint firstItem="goZ-tz-o25" firstAttribute="top" secondItem="xzH-v3-hN2" secondAttribute="bottom" constant="10" id="n6t-JO-iOV"/>
                 <constraint firstItem="dC7-ul-5y8" firstAttribute="top" secondItem="goZ-tz-o25" secondAttribute="bottom" constant="5" id="oLo-cn-Nb5"/>
-                <constraint firstItem="xzH-v3-hN2" firstAttribute="leading" secondItem="mQA-WD-fi3" secondAttribute="leading" id="orO-ud-2dh"/>
                 <constraint firstItem="yLs-qs-GxU" firstAttribute="top" secondItem="dC7-ul-5y8" secondAttribute="bottom" constant="20" id="qiU-K3-Ruq"/>
+                <constraint firstItem="xzH-v3-hN2" firstAttribute="trailing" secondItem="vWn-np-SrS" secondAttribute="trailing" id="y77-Bu-K5J"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vWn-np-SrS"/>

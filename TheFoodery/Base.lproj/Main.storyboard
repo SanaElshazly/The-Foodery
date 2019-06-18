@@ -71,12 +71,14 @@
                                 <rect key="frame" x="20" y="50" width="335" height="300"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" secondItem="cnz-4B-8Fm" secondAttribute="height" multiplier="67:60" id="GIg-ht-dCw"/>
                                     <constraint firstAttribute="height" priority="750" constant="300" placeholder="YES" id="sBu-pO-vy9"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="cnz-4B-8Fm" firstAttribute="centerX" secondItem="ln0-Fs-Sbf" secondAttribute="centerX" id="IRz-am-Vp2"/>
                             <constraint firstItem="cnz-4B-8Fm" firstAttribute="top" secondItem="gbm-uV-Vx5" secondAttribute="top" constant="30" id="S2u-hc-dpa"/>
                             <constraint firstItem="cnz-4B-8Fm" firstAttribute="leading" secondItem="gbm-uV-Vx5" secondAttribute="leading" constant="20" id="SGS-nL-VhB"/>
                             <constraint firstItem="gbm-uV-Vx5" firstAttribute="trailing" secondItem="cnz-4B-8Fm" secondAttribute="trailing" constant="20" id="SPt-hl-zxp"/>
