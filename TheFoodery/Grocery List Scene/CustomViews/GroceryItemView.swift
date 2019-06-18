@@ -42,9 +42,12 @@ class GroceryItemView: UIView, NibOwnerLoadable {
         }
         
         nameLabel.text = product?.name
-        priceLabel.text = "\(product?.price ?? 0)"
+        let price = Double(product?.price ?? 0)
+        priceLabel.text = String(format: "€%.02f", price/100)
         descriptionLabel.text = product?.description
         productImageView.sd_setImage(with: URL(string: product?.image ?? "placeholder.png"))
     }
+    
+    
 
 }
