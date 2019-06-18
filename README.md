@@ -1,6 +1,6 @@
 # The Foodery
 
-![image](https://user-images.githubusercontent.com/6953604/59660901-f193b300-91a9-11e9-8139-008d30b041d2.png)
+![image](https://user-images.githubusercontent.com/6953604/59662647-a9768f80-91ad-11e9-8438-553069bf24de.png)
 
 ![](https://img.shields.io/badge/Swift-4.2-orange.svg)
 
