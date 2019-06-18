@@ -38,4 +38,4 @@ To run The Foodery app, follow these steps:
 
  - Write Unit Tests and UI Tests
  - Support landscape and portrait orientation
- - Handle errors
+ - Show error messages to the user upon any failure
